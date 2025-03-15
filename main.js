@@ -266,7 +266,6 @@ function checkIfWordGuessed() {
   const guessedWord = Array.from(guessSpans)
     .map((span) => span.innerHTML.toLowerCase())
     .join("");
-  console.log(guessedWord);
   const originalWord = randomValueName.toLowerCase().replace(/\s/g, "");
   return guessedWord === originalWord;
 }
